@@ -1,0 +1,10 @@
+environment=TestURL
+browser=chrome
+
+implicitWaitTime=10
+webdriverWaitTime=30
+
+base.url = https://www.saucedemo.com
+
+attachmentPath = /src/test/resources/data/attachment.txt
+downloadFilePath = \\src\\test\\resources\\download
