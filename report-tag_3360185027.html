@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-saucedemo-ui</td>
         <td>1</td>
-      <td>20 Dec 2022, 21:15</td>
+      <td>21 Dec 2022, 18:35</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@loginAccount</td>
+          <td      class="passed"    >7</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
-          <td >0</td>
-          <td     class="skipped"   >8</td>
           <td >0</td>
           <td >0</td>
           <td class="total">8</td>
 
-          <td >0</td>
-          <td  class="failed"    >2</td>
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >1</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="2000000">0.002</td>
+          <td class="duration" data-value="11821000000">11.821</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -184,12 +184,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">1.371</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">To login into an account with user standard_user</span>
 
@@ -200,13 +200,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-2">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -216,50 +216,17 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-2" class="inner-level collapse collapsable-details  in ">
+    <div id="before-2" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief failed">
+          <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.saucedemo.steps.AutomationHooks.launchBrowser(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">6.666</span>
+  <span class="lead-duration duration">2.569</span>
 
           </div>
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>Error message</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
-  (unknown error: DevToolsActivePort file doesn't exist)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-Build info: version: '4.2.2', revision: '683ccb65d6'
-System info: host: 'fv-az400-435', ip: '10.1.0.54', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-1024-azure', java.version: '1.8.0_352'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [start-maximized, disable-infobars], extensions: [], prefs: {download.default_directory: /home/runner/work/cucumber-..., download.prompt_for_download: false, plugins.plugins_disabled: Chrome PDF Viewer, profile.default_content_settings.popups: 0}}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [start-maximized, disable-infobars], extensions: [], prefs: {download.default_directory: /home/runner/work/cucumber-..., download.prompt_for_download: false, plugins.plugins_disabled: Chrome PDF Viewer, profile.default_content_settings.popups: 0}}}}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:283)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:184)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:106)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:106)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:93)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
-	at com.saucedemo.util.DriverManager.launchBrowser(DriverManager.java:64)
-	at com.saucedemo.steps.AutomationHooks.launchBrowser(AutomationHooks.java:26)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -272,9 +239,9 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -284,15 +251,15 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">I am on the application login page</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.725</span>
 
 </div>
 
@@ -315,11 +282,11 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">I login into application with <span class="argument">&quot;standard_user&quot;</span> and <span class="argument">&quot;secret_sauce&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.326</span>
 
 </div>
 
@@ -342,11 +309,11 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;Sign in&quot;</span> button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.206</span>
 
 </div>
 
@@ -369,11 +336,11 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">I verify home page</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.114</span>
 
 </div>
 
@@ -400,9 +367,9 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -412,32 +379,17 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details  in ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief failed">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.saucedemo.steps.AutomationHooks.closeBrowser(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.107</span>
 
           </div>
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
-          <a>Error message</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>java.lang.IllegalStateException: Driver should have not been null!!
-	at com.saucedemo.util.DriverManager.getDriver(DriverManager.java:38)
-	at com.saucedemo.util.DriverManager.closeDriver(DriverManager.java:89)
-	at com.saucedemo.steps.AutomationHooks.closeBrowser(AutomationHooks.java:40)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -465,10 +417,10 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 </div>
 
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">10.450</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
@@ -481,13 +433,13 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details  in ">
+  <div id="element-5" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -497,50 +449,17 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 
     </div>
 
-    <div id="before-8" class="inner-level collapse collapsable-details  in ">
+    <div id="before-6" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief failed">
+          <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">com.saucedemo.steps.AutomationHooks.launchBrowser(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.169</span>
+  <span class="lead-duration duration">0.199</span>
 
           </div>
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
-          <a>Error message</a>
-      </div>
-      <div id="msg-9" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: unknown error: Chrome failed to start: exited abnormally.
-  (unknown error: DevToolsActivePort file doesn't exist)
-  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
-Build info: version: '4.2.2', revision: '683ccb65d6'
-System info: host: 'fv-az400-435', ip: '10.1.0.54', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-1024-azure', java.version: '1.8.0_352'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [start-maximized, disable-infobars], extensions: [], prefs: {download.default_directory: /home/runner/work/cucumber-..., download.prompt_for_download: false, plugins.plugins_disabled: Chrome PDF Viewer, profile.default_content_settings.popups: 0}}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [start-maximized, disable-infobars], extensions: [], prefs: {download.default_directory: /home/runner/work/cucumber-..., download.prompt_for_download: false, plugins.plugins_disabled: Chrome PDF Viewer, profile.default_content_settings.popups: 0}}}}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:283)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:184)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:106)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:106)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:93)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
-	at com.saucedemo.util.DriverManager.launchBrowser(DriverManager.java:64)
-	at com.saucedemo.steps.AutomationHooks.launchBrowser(AutomationHooks.java:26)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -553,7 +472,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -565,15 +484,15 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">I am on the application login page</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.161</span>
 
 </div>
 
@@ -596,11 +515,11 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">I login into application with <span class="argument">&quot;test&quot;</span> and <span class="argument">&quot;test&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.165</span>
 
 </div>
 
@@ -623,11 +542,11 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I click on <span class="argument">&quot;Sign in&quot;</span> button</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.087</span>
 
 </div>
 
@@ -650,11 +569,11 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">I verify home page</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">10.037</span>
 
 </div>
 
@@ -662,6 +581,47 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()='Products']&quot;}
+  (Session info: headless chrome=108.0.5359.98)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'fv-az436-951', ip: '10.1.0.16', os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-1024-azure', java.version: '1.8.0_352'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca210436eb76358d283028536d73212e, findElement {using=xpath, value=//span[text()='Products']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.98, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /tmp/.com.google.Chrome.mOmYsL}, goog:chromeOptions: {debuggerAddress: localhost:41487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:41487/devtoo..., se:cdpVersion: 108.0.5359.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ca210436eb76358d283028536d73212e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.getText(Unknown Source)
+	at com.saucedemo.pages.LoginPage.verifyHomePage(LoginPage.java:37)
+	at com.saucedemo.steps.LoginAccoutSteps.i_verify_home_page(LoginAccoutSteps.java:49)
+	at &#10045;.I verify home page(file:///home/runner/work/cucumber-saucedemo-ui/cucumber-saucedemo-ui/src/test/resources/features/login.feature:10)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -681,7 +641,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-11">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-9">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -693,13 +653,13 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 
     </div>
 
-    <div id="after-11" class="inner-level collapse collapsable-details  in ">
+    <div id="after-9" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.saucedemo.steps.AutomationHooks.closeBrowser(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.141</span>
 
           </div>
 
@@ -707,14 +667,13 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
           <a>Error message</a>
       </div>
-      <div id="msg-12" class="collapse collapsable-details  in ">
-        <pre>java.lang.IllegalStateException: Driver should have not been null!!
-	at com.saucedemo.util.DriverManager.getDriver(DriverManager.java:38)
-	at com.saucedemo.util.DriverManager.closeDriver(DriverManager.java:89)
-	at com.saucedemo.steps.AutomationHooks.closeBrowser(AutomationHooks.java:40)
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>java.lang.NullPointerException
+	at com.saucedemo.steps.AutomationHooks.logError(AutomationHooks.java:50)
+	at com.saucedemo.steps.AutomationHooks.closeBrowser(AutomationHooks.java:37)
 </pre>
       </div>
     </div>
@@ -723,6 +682,21 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goo
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-11" class="collapsable-control">
+      <a>screenshot</a>
+      <a href="embeddings/embedding_-404260903.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-11" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-404260903.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
