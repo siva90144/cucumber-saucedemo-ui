@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class DriverManager {
     private static final Logger log = LoggerFactory.getLogger(DriverManager.class);
     private static DriverManager driverManager;
-    private static ThreadLocal<WebDriver> tDriver = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> tDriver = new ThreadLocal<>();
 
     private DriverManager() {
     }
@@ -60,6 +60,10 @@ public class DriverManager {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("start-maximized");
                 options.addArguments("disable-infobars");
+                options.addArguments("--disable-extensions");
+                options.addArguments("--disable-dev-shm-usage");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--headless");
                 options.setExperimentalOption("prefs", chromePrefs);
                 driver = new ChromeDriver(options);
                 break;
