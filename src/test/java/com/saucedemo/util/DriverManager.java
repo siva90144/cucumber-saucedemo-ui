@@ -1,7 +1,6 @@
 package com.saucedemo.util;
 
 import io.cucumber.java.Scenario;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -46,11 +45,11 @@ public class DriverManager {
         log.info("Launching " + driverType + " browser.");
         switch (driverType) {
             case FIREFOX:
-                WebDriverManager.firefoxdriver().arch32().setup();
+               // WebDriverManager.firefoxdriver().arch32().setup();
                 driver = new FirefoxDriver();
                 break;
             case CHROME:
-                WebDriverManager.chromedriver().arch32().setup();
+               // WebDriverManager.chromedriver().arch32().setup();
                 HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
                 chromePrefs.put("profile.default_content_settings.popups", 0);
                 chromePrefs.put("download.default_directory",
@@ -63,7 +62,7 @@ public class DriverManager {
                 options.addArguments("--disable-extensions");
                 options.addArguments("--disable-dev-shm-usage");
                 options.addArguments("--no-sandbox");
-                options.addArguments("--headless");
+                //options.addArguments("--headless");
                 options.setExperimentalOption("prefs", chromePrefs);
                 driver = new ChromeDriver(options);
                 break;

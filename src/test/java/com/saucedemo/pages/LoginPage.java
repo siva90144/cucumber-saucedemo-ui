@@ -34,6 +34,6 @@ public class LoginPage {
     }
 
     public void verifyHomePage() {
-        assertThat(homePage.getText()).isEqualTo("PRODUCTS");
+        assertThat(homePage.getText()).isEqualTo("Products");
     }
 }

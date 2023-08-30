@@ -13,16 +13,16 @@
         <cucumber.version>7.10.1</cucumber.version>
         <logger.version>2.0.6</logger.version>
         <maven.cucumber.reporting>5.7.4</maven.cucumber.reporting>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
     </properties>
 
     <dependencies>
-        <dependency>
+        <!--<dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.3.1</version>
-        </dependency>
+            <version>5.4.1</version>
+        </dependency>-->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -71,7 +71,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.2.2</version>
+            <version>4.11.0</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -84,6 +84,13 @@
             <artifactId>assertj-core</artifactId>
             <version>3.23.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.13.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -126,8 +133,8 @@
                         <configuration>
                             <projectName>cucumber-saucedemo-ui</projectName>
                             <!-- output directory for the generated report -->
-                            <outputDirectory>target/cucumber-reports</outputDirectory>
-                            <!--                                    <cucumberOutput>target/cucumber-reports/cucumber.json</cucumberOutput>-->
+                            <outputDirectory>target/</outputDirectory>
+                            <cucumberOutput>target/cucumber.json</cucumberOutput>
                             <jsonFiles>
                                 <!-- supports wildcard or name pattern -->
                                 <param>**/*.json</param>
